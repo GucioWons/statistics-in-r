@@ -1,9 +1,6 @@
-setwd("C:/Users/GucioWons/Desktop")
-dane <- read.csv("regresja liniowa.csv", sep = ";", header = TRUE)
-print(dane)
-dane$Zgony <- as.numeric(gsub(",", ".", dane$Zgony))
-dane$Urodzenia <- as.numeric(gsub(",", ".", dane$Urodzenia))
-dane$Ludnosc <- as.numeric(gsub(",", ".", dane$Ludnosc))
+library(readxl)
+
+dane <- read_excel("regresja liniowa.xlsx")
 
 print(dane)
 

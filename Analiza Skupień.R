@@ -1,10 +1,7 @@
 library(readxl)
-install.packages("factoextra")
 library(factoextra)
 
-setwd("C:/Users/GucioWons/Desktop")
-data <- read_excel("analiza3.xlsx")
-print(data)
+data <- read_excel("analiza skupień.xlsx")
 
 normalized_data <- scale(data[, -1])
 
