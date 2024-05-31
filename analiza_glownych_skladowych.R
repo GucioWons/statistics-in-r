@@ -30,14 +30,6 @@ print(eig_values)
 fviz_eig(pca_result)
 
 
-fviz_pca_biplot(pca_result, 
-                geom.ind = "point", 
-                col.ind = "blue", 
-                addEllipses = TRUE, 
-                label = "var", 
-                habillage = DATA_TABLE$Wojewodztwo)
-
-
 fviz_pca_var(pca_result,
              col.var = "contrib",
              gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07"))
