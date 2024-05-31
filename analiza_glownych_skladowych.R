@@ -15,10 +15,11 @@ DATA_STANDARD <- scale(PCA_TABLE)
 
 
 kmo_result <- KMO(DATA_STANDARD)
+
 print(kmo_result)
 
 
-pca_result <- prcomp(DATA_STANDARD, scale. = TRUE)
+pca_result <- prcomp(DATA_STANDARD)
 
 
 fviz_eig(pca_result)
