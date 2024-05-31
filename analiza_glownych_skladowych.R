@@ -21,11 +21,13 @@ print(kmo_result)
 
 pca_result <- prcomp(DATA_STANDARD)
 
+summary(pca_result)
+
+eig_values <- get_eigenvalue(pca_result)
+
+print(eig_values)
 
 fviz_eig(pca_result)
-
-
-summary(pca_result)
 
 
 fviz_pca_biplot(pca_result, 
@@ -47,5 +49,3 @@ fviz_pca_ind(pca_result,
              repel = TRUE)
 
 
-eig_values <- get_eigenvalue(pca_result)
-print(eig_values)
